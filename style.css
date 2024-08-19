@@ -1,0 +1,79 @@
+body {
+    background-color: skyblue;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 500px;
+    height: auto;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.search-box {
+    text-align: center;    
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+.s-button {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 15px;
+    background-color: #ffea00;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+    border: 2px solid rgb(255, 213, 0);
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hold-info {
+    display: grid;
+    grid-template-columns: 2;
+    gap: 10px; /* Add gap between grid items */
+    background-color: aliceblue;
+    border: 2px solid skyblue;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    padding: 10px; /* Add padding for spacing inside the box */
+}
+
+.city-title {
+    grid-column: 1 / span 2; /* Span 2 columns */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center; /* Center text */
+}
+
+.left-info,
+.right-info {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
