@@ -1,23 +1,35 @@
+* {
+    font-family: "Nunito", sans-serif;
+}
+
 body {
-    background-color: skyblue;
+    background-color: #B7E0FF;
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    background-size: cover;
 }
 
 .container {
     width: 500px;
     height: auto;
     margin: auto;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transition-property: transform, box-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .title {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
 
@@ -29,9 +41,16 @@ body {
 input[type="text"] {
     width: 70%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
+    background-color: #FCFCFC;
+    border: 2px solid #EEEEEE;
+    border-radius: 10px;
     font-size: 16px;
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus{
+    outline: none;
+    border: 1.5px solid #FB6D00;
 }
 
 .s-button {
@@ -41,39 +60,78 @@ input[type="text"] {
 button {
     padding: 10px 20px;
     margin: 15px;
-    background-color: #ffea00;
+    box-sizing: border-box;
     color: white;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000; 
-    border: 2px solid rgb(255, 213, 0);
-    border-radius: 15px;
+    background-color: #FF903A;
+    border: 1.5px solid #FF903A;
+    border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    transition-property: background-color, color, opacity;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+button:hover {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF903A;
+}
+
+button:active {
+    background-color: #FF903A;
+    color: white;
+    opacity: 0.5;
+}
+
+button:focus {
+    outline: 1.5px solid #FB6D00;
 }
 
 .hold-info {
     display: grid;
     grid-template-columns: 2;
-    gap: 10px; /* Add gap between grid items */
-    background-color: aliceblue;
-    border: 2px solid skyblue;
+    gap: 10px;
+    background-color: rgb(191, 184, 255, 0.2);
     border-radius: 15px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    padding: 10px; /* Add padding for spacing inside the box */
+    padding: 10px;
+    border: 1.5px solid transparent;
+    transition-property: border;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.hold-info:hover {
+    border: 1.5px solid rgb(191, 184, 255, 0.5);
 }
 
 .city-title {
-    grid-column: 1 / span 2; /* Span 2 columns */
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center; /* Center text */
+    grid-column: 1 / span 2; 
+    text-align: center; 
 }
 
 .left-info,
 .right-info {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.5); /* Slightly transparent background */
+    padding: 0 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #333;
+}
+
+.attribution a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    text-decoration: underline;
 }
