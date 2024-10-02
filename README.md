@@ -22,13 +22,13 @@ This weather website is a web-based application built simply with HTML, CSS, and
    ```
 
 2. View website:
-    - Open index.html to view website
+    - Run index.html in a preview window to view website.
 
 ## Demo Video
 
 Check out this short demo video to see the weather website in action:
 
-[![Watch the video](https://img.youtube.com/vi/vJlhyuBwM-Q/maxresdefault.jpg)](https://youtu.be/vJlhyuBwM-Q)
+[![Weather Website](https://img.youtube.com/vi/vJlhyuBwM-Q/0.jpg)](https://youtu.be/vJlhyuBwM-Q)
 
 ## Contact
 Saxon Crawford - saxon.crawford@icloud.com
